@@ -89,6 +89,96 @@ export const resumes: Resume[] = [
       },
     },
   },
+  {
+    id: "4",
+    companyName: "Amazon",
+    jobTitle: "Backend Developer",
+    imagePath: "/images/resume-4.jpg",
+    resumePath: "/resumes/resume-3.pdf",
+    feedback: {
+      overallScore: 88,
+      ATS: {
+        score: 92,
+        tips: [],
+      },
+      toneAndStyle: {
+        score: 85,
+        tips: [],
+      },
+      content: {
+        score: 90,
+        tips: [],
+      },
+      structure: {
+        score: 87,
+        tips: [],
+      },
+      skills: {
+        score: 88,
+        tips: [],
+      },
+    },
+  },
+  {
+    id: "5",
+    companyName: "Microsoft",
+    jobTitle: "Fullstack Developer",
+    imagePath: "/images/resume-5.jpg",
+    resumePath: "/resumes/resume-4.pdf",
+    feedback: {
+      overallScore: 90,
+      ATS: {
+        score: 93,
+        tips: [],
+      },
+      toneAndStyle: {
+        score: 89,
+        tips: [],
+      },
+      content: {
+        score: 91,
+        tips: [],
+      },
+      structure: {
+        score: 90,
+        tips: [],
+      },
+      skills: {
+        score: 92,
+        tips: [],
+      },
+    },
+  },
+  {
+    id: "6",
+    companyName: "Facebook",
+    jobTitle: "UI/UX Designer",
+    imagePath: "/images/resume-6.jpg",
+    resumePath: "/resumes/resume-5.pdf",
+    feedback: {
+      overallScore: 87,
+      ATS: {
+        score: 88,
+        tips: [],
+      },
+      toneAndStyle: {
+        score: 85,
+        tips: [],
+      },
+      content: {
+        score: 86,
+        tips: [],
+      },
+      structure: {
+        score: 87,
+        tips: [],
+      },
+      skills: {
+        score: 90,
+        tips: [],
+      },
+    },
+  },
 ];
 
 export const AIResponseFormat = `

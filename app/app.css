@@ -34,6 +34,9 @@ h1 {
 h2 {
   @apply max-sm:text-xl text-3xl text-dark-200;
 }
+h3 {
+  @apply text-lg text-gray-500 break-words;
+}
 
 label {
   @apply text-dark-200;
