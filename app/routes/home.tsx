@@ -1,5 +1,4 @@
-import type { Route } from "./+types/home";
-import Navbar from "../components/Navbar";
+/*import Navbar from "../components/Navbar";*/
 import { resume } from "react-dom/server";
 import { resumes } from "~/constants";
 import ResumeCard from "~/components/ResumeCard";
@@ -7,13 +6,13 @@ import { usePuterStore } from "~/lib/puter";
 import { useEffect } from "react";
 import { useNavigate } from "react-router";
 import { useLocation } from "react-router";
-
-export function meta({}: Route.MetaArgs) {
+import Navbar from "~/components/Navbar";
+/*export function meta({}: Route.MetaArgs) {
   return [
     { title: "AI-resume-analyzer" },
     { name: "description", content: "smart feedback for your dream job" },
   ];
-}
+}*/
 
 export default function Home() {
   const { auth, puterReady } = usePuterStore();
