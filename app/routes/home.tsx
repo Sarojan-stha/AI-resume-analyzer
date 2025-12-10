@@ -3,6 +3,11 @@ import Navbar from "../components/Navbar";
 import { resume } from "react-dom/server";
 import { resumes } from "~/constants";
 import ResumeCard from "~/components/ResumeCard";
+import { usePuterStore } from "~/lib/puter";
+import { useEffect } from "react";
+import { useNavigate } from "react-router";
+import { useLocation } from "react-router";
+
 export function meta({}: Route.MetaArgs) {
   return [
     { title: "AI-resume-analyzer" },
@@ -11,6 +16,19 @@ export function meta({}: Route.MetaArgs) {
 }
 
 export default function Home() {
+  const { auth, puterReady } = usePuterStore();
+  const navigate = useNavigate();
+  const location = useLocation();
+  const next = location.search.split("?next")[1];
+
+  useEffect(() => {
+    if (!auth.isAuthenticated) {
+      navigate("/auth?redirect=/");
+    }
+  }, [auth.isAuthenticated]);
+
+  console.log(auth.isAuthenticated);
+
   return (
     <main className="bg-[url('/images/bg-main.svg')] bg-cover ">
       <Navbar />
